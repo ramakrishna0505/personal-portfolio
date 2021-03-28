@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d9e8e5;
+  margin: 0;
+  font-family: poppins, sans-serif;
+  position: relative;
+  height: 100vh;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  min-width: 18%;
+}
+.navbar-list-item {
+  padding: 2% 4%;
+  cursor: pointer;
+}
+.navbar {
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2c8286;
+  font-size: 18px;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 2px 2px 10px grey;
+  color: white;
+  font-weight: bold;
+}
+.active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.line1,
+.line2,
+.line3 {
+  height: 2px;
+  width: 25px;
+  background: white;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.lines {
+  display: none;
+}
+
+.contact a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.navbar-list-item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.projects {
+  padding-top: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project {
+  background: #2c8286;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  width: 15rem;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.home,
+.about {
+  padding-top: 10vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  padding-top: 10vh;
+  height: 101vh;
+}
+
+.main-section {
+  height: 100%;
+}
+
+.username {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.para {
+  font-size: 2.5rem;
+  padding-top: 10px;
+}
+
+.profile-pic {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.resume {
+  font-size: 16px;
+  background: #2c8286;
+  padding: 10px;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px grey;
+  border: none;
+  font-weight: bold;
+  font-family: "Poppins";
+  margin-top: 10px;
+}
+
+.resume a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.know-more {
+  text-align: center;
+}
+
+.project p {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-items {
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    background: #2c8286;
+    height: 90vh;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+  }
+
+  .toggle-bar {
+    transform: translateX(0);
+  }
+
+  .lines {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  .projects {
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .project p {
+    padding: 0.5rem;
+  }
+
+  .username {
+    font-size: 1.5rem;
+  }
+
+  .para {
+    font-size: 1rem;
+  }
+
+  .profile-pic {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-4px, 8px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-2px, -6px);
+}
+
+.image {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  margin: 0.5rem 0rem;
+}
+
+.title {
+  font-size: 24px;
+  color: #2c8286;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  margin: 1rem;
+}
