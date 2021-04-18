@@ -63,12 +63,13 @@ ul {
   display: none;
 }
 
-.contact a {
+a {
+  text-decoration: none;
   color: white;
 }
 
 a:visited {
-  color: white;
+  color: white !important;
 }
 
 .navbar-list-item a {
@@ -80,7 +81,8 @@ a:visited {
 .projects {
   padding-top: 10vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project {
@@ -92,7 +94,7 @@ a:visited {
   justify-content: center;
   flex-direction: column;
   border-radius: 0.5rem;
-  width: 15rem;
+  width: 17rem;
   color: white;
   text-align: center;
   transition: transform 0.2s ease;
@@ -120,6 +122,7 @@ a:visited {
 .username {
   font-size: 4rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .para {
@@ -149,7 +152,6 @@ a:visited {
 
 .resume a {
   text-decoration: none !important;
-  color: white !important;
 }
 
 .know-more {
@@ -187,10 +189,6 @@ a:visited {
     display: block;
     height: 30px;
     width: 30px;
-  }
-
-  .projects {
-    flex-wrap: wrap;
   }
 
   .project {
@@ -234,9 +232,13 @@ a:visited {
   margin: 0.5rem 0rem;
 }
 
+#searchIcon {
+  margin: 0.5rem 0rem;
+}
+
 .title {
   font-size: 24px;
-  color: #2c8286;
+  color: white;
   font-weight: 500;
   margin-bottom: 0.5rem;
   width: fit-content;
@@ -246,14 +248,16 @@ a:visited {
   transform: scale(1.05);
 }
 
-.title a {
-  text-decoration: none;
-}
-
-.title a:hover {
-  text-decoration: underline;
-}
-
 .description {
   margin: 1rem;
+}
+
+@media only screen and (min-width: 427px) and (max-width: 769px) {
+  .username {
+    font-size: 3rem;
+  }
+
+  .projects {
+    justify-content: space-around;
+  }
 }
