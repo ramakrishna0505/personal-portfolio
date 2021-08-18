@@ -252,6 +252,15 @@ a:visited {
   margin: 1rem;
 }
 
+.highlight {
+  color: #2c8286;
+}
+
+.highlight:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 427px) and (max-width: 769px) {
   .username {
     font-size: 3rem;

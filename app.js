@@ -53,3 +53,7 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+function navigateToCloudExtend() {
+  location.href = 'https://www.cloudextend.io/';
+}
