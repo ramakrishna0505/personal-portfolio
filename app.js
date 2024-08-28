@@ -54,6 +54,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-function navigateToCloudExtend() {
-  location.href = 'https://www.cloudextend.io/';
+function navigateToCoforge() {
+  location.href = 'https://www.linkedin.com/company/coforge-tech/';
 }
